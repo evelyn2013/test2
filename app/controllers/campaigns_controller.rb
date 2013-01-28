@@ -52,8 +52,7 @@ class CampaignsController < ApplicationController
         
         open('url')
         
-        sent = Mailer.deliver_mail('enomayo@gmail.com', @campaign.sms_body)
-        open('url')
+       
         
         
         format.html { redirect_to @campaign, notice: 'Campaign was successfully created.' }
